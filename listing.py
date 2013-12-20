@@ -15,7 +15,6 @@ change_to = "change for action"
 
 def delete_file(path,deleted):
 	deleted["deleted"] += [{"path": path, "date": datetime.datetime.now().strftime("%c")}]
-	#print "remove( " + path + "  )"
 	remove( path )
 
 def describe_folder(path,json_base,only_files,data):
